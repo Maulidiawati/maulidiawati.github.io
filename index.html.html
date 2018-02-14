@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS TEMPLATE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <h1 style="font-size: 250%";>HELLO GUYS!</h1>
+    <p style="font-size: 130%">Selamat datang di Nis's Blog</p> <br>
+
+    <div class="header">
+<h2 style="font-family: monospace; font-size: 50px">Know More About Me</h2>
+</div>
+
+<img src="img/Foto Profil.jpg">
+<p>Halo perkenalkan nama aku Maulidiawati Khoirunisa. Biasanya aku dipanggil Nisa tapi saat SMP dulu aku sering dipanggil Uli atau Maul,karena di SMPku dulu populasi perempuan bernama Nisa itu sangat banyak. Aku lahir di Tangerang pada tanggal 31 Mei 2001. Tahun ini aku berumur 16 Tahun. Aku memiliki seorang kakak perempuan 2 tahun diatas ku dan 3 saudara laki-laki.Aku sekarang bersekolah di SMK-SMAK Bogor.Aku tinggal di Komplek Perumahan Pondok Benda Indah,Pamulang. Karena aku saat ini bersekolah di Bogor,aku tinggal di Bogor daerah Ciheuleut (KOS).</p>
+<p>Jadi,jika ada waktu luang sesekali aku mesti pulang ke rumah selain untuk mengisi bahan makanan untuk di kosan juga untuk menghilangkan rasa rindu pada saudara-saudaraku.</p>
+
+<div class="header">
+  <h2>My Hobbies</h2>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#bisque;"><img src="img/Foto baca buku.jpg"alt="Foto baca buku" width="250" height="260"></div>
+  <div class="column middle" style="background-color:#bbb;">Aku memiliki 2 hobi yaitu menonton drama korea dan membaca novel. Aku menyukai dua kegiatan itu sejak SMP. Aku sering mengikuti perkembangan drama korea setiap tahunnya karena jalan ceritanya yang bervariasi dan hanya memiliki 16-20 episode. Aku sangat menyukai drama korea bergenre romance dan action seperti Descendant Of The Sun dan Healer.
+    
+  Selain itu, aku juga sering membaca novel-novel fantasi jika tidak ada list drama korea yang harus kutonton.Ada satu buku yang sangat aku sukai yaitu berjudul Ullysess Moore. Buku itu bertemakan fantasi tentang rumah yang bisa membawa penghuninya keliling dunia.Akujuga menyukai novel yang bergenre romance.Novel favoritku berjudul He Was Cool. Entah kenapa, aku sangat menyukai novel terjemahan dari korea.Karena, setiap emosi dalam ceritanya benar-benar bisa membuatku terbawa perasaan.</div>
+  <div class="column side" style="background-color:#pink;"><img src="img/Foto menonton.jpg"alt="Foto menonton" width="250" height="280"></div>
+</div>
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
